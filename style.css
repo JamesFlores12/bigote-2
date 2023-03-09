@@ -1,16 +1,16 @@
-.mustache{
+.bigote{
     width: 180px;
     height: 180px;
-    left: 100px;
+    left: 500px;
     border-radius: 50%;
-    position: absolute;
+    position:absolute;
     color: black;
     box-shadow: 
     150px 240px 0 0 currentColor,
     300px 240px 0 0 currentColor;
-}
 
-.mustache::before{
+}
+.bigote::before{
     content: " ";
     position: absolute;
     left: 30px;
@@ -19,11 +19,10 @@
     height: 120px;
     border-bottom: solid 180px currentColor;
     border-radius: 0 0 0 100%;
-    transform: rotate(-40deg);
+    transform:  rotate(-40deg);
     transform-origin: right 210px;
 }
-
-.mustache::after {
+.bigote::after{
     content: " ";
     position: absolute;
     left: 390px;
@@ -32,6 +31,95 @@
     height: 120px;
     border-bottom: solid 180px currentColor;
     border-radius: 0 0 100% 0;
-    transform: rotate(40deg);
+    transform:  rotate(40deg);
     transform-origin: left 210px;
+}
+.bigote:before {
+    animation: shakeLeft 1s ease-in-out infinite;
+}
+.bigote:after {
+    animation: shakeRight 1s ease-in-out infinite;
+}
+@keyframes shakeLeft {
+    0%{
+        transform: rotate(-50deg);
+    }
+    50%{
+        transform: rotate(-30deg);
+    }
+    100%{
+        transform: rotate(-50deg);
+    }
+}
+@keyframes shakeRight {
+    0%{
+        transform: rotate(50deg);
+    }
+    50%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(50deg);
+    }
+}
+.ojos{
+    width: 150px;
+    height: 150px;
+    left: 850px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+.ojoss
+{
+    width: 150px;
+    height: 150px;
+    left: 555px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    
+}
+.sombrero{
+    width: 200px;
+    height: 160px;
+    left: 300px;
+    top: 20px;
+    border-radius: 100% 100% 0 0;
+    position: absolute;
+    color: #ffffff;
+    background-color: rgb(255, 255, 255);
+}
+.sombrero1{
+    width: 200px;
+    height: 160px;
+    left: 300px;
+    top: 20px;
+    border-radius: 100% 100% 0 0;
+    position: absolute;
+    color: #ffffff;
+    background-color: rgb(255, 255, 255);
+}
+.sombrero::before{
+    content: "";
+    position: absolute;
+    left: 50px;
+    left: 750 px;
+    top: 40px;
+    width: 300px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 35px;
+}
+.sombrero1::before{
+    content: "";
+    position: absolute;
+    left: 50px;
+    left: 750 px;
+    top: 40px;
+    width: 300px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 35px;
 }
